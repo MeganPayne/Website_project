@@ -1,0 +1,35 @@
+/* Main Page*/
+
+* {
+  background-image: "Background-image.jpg"
+}
+
+h1 {
+  /*background-image: "Background-image.jpg"*/
+  background: linear-gradient(bottom, rgba(0,0,0,0), rgba(0,200,0,.7));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,200,0,.7));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,200,0,.7));
+  color: rgba(61,142,34),1);
+  /*background-color: Yellow;*/
+  padding: 0 auto;
+  text-align: center;
+}
+
+h3 ul {
+  text-align: center;
+  padding: 10px;
+}
+
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+
+div {
+  color: yellow;
+  background-color: black;
+}
+
+div:hover {
+  color: green;
+}
