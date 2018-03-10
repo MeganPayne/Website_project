@@ -5,6 +5,8 @@
 -hover colour not on all header elements
 */
 
+* {margin: 0; padding: 0;}
+
 
 h1 {
   background: linear-gradient(bottom, rgba(0,36,0,0.2), rgba(7,61,0,0.7));
@@ -35,8 +37,110 @@ div:hover {
   color: green;
 }
 
+/* photobanner */
+
+#container {
+  width: 1000px;
+  overflow: hidden;
+  /*padding: auto;*/
+  margin: 50px auto;
+  background: white;
+}
+/*
+.photob {
+  max-width:auto;
+  height: auto;
+}*/
+.photobanner {
+  height: 233px;
+  width: 355px;
+  margin-bottom: 80px;
+}
+
+/*keyframe animations*/
+.first {
+ -webkit-animation: bannermove 10s linear infinite;
+    -moz-animation: bannermove 10s linear infinite;
+     -ms-animation: bannermove 10s linear infinite;
+      -o-animation: bannermove 10s linear infinite;
+         animation: bannermove 10s linear infinite;
+}
+
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+}
+
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+}
+
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+}
+
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+}
+
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+}
+
+.photobanner {
+    height: 233px;
+    width: 3550px;
+    margin-bottom: 80px;
+}
+
+.photobanner img {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.photobanner img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+
+    -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
 table {
   align-content: space-around;
+  margin: 50px auto;
 }
 
 table h3 {
@@ -53,5 +157,4 @@ td#newsbar {
   padding: 50px 50px 50px 50px;
   margin: 50px;
   align-items: center;
-  align-self: flex-end;
 }
