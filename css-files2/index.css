@@ -5,8 +5,7 @@
 -hover colour not on all header elements
 */
 
-* {margin: 0; padding: 0;}
-
+* {margin: 0 auto; padding: 0;}
 
 h1 {
   background: linear-gradient(bottom, rgba(0,36,0,0.2), rgba(7,61,0,0.7));
@@ -39,18 +38,42 @@ div:hover {
 
 /* photobanner */
 
-#container {
-  width: 1000px;
-  overflow: hidden;
+.container {
+  max-width: 1000px;
+  /*overflow: hidden;*/
   /*padding: auto;*/
-  margin: 50px auto;
+  margin: auto;
+  position: relative;
   background: white;
 }
+
+.photob {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0px 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
 /*
 .photob {
   max-width:auto;
   height: auto;
-}*/
+}
 .photobanner {
   height: 233px;
   width: 355px;
@@ -58,6 +81,7 @@ div:hover {
 }
 
 /*keyframe animations*/
+/*
 .first {
  -webkit-animation: bannermove 10s linear infinite;
     -moz-animation: bannermove 10s linear infinite;
@@ -123,7 +147,7 @@ div:hover {
     -o-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
-}
+} */
 
 .photobanner img:hover {
     -webkit-transform: scale(1.1);
