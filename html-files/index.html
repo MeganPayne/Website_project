@@ -3,8 +3,8 @@
     <head>
         <title>Zoo Briezi</title>
         <link href="../Bootstrap/bootstrap.css" type="text/css" rel="stylesheet">
-        <link href="../css-files/index.css" type="text/css" rel="stylesheet">
-        <script src="../java-files/index.js" type="text/javascript"></script>
+        <!--<link href="../css-files/index.css" type="text/css" rel="stylesheet"> -->
+        <!--<script src="../java-files/index.js" type="text/javascript"></script> -->
 
         <style>
             ul.nav li{
@@ -35,18 +35,14 @@
         <img class="photob" id="2" src="../graphics/image2.jpg" alt="horse"/>
         <img class="photob" id="3" src="../graphics/image3.jpg" alt="goat"/>
         <img class="photob" id="4" src="../graphics/image4.jpg" alt="picnic"/>
-        <img class="photob" id="1" src="../graphics/image1.jpg" alt="pig"/>
-        <img class="photob" id="2" src="../graphics/image2.jpg" alt="horse"/>
-        <img class="photob" id="3" src="../graphics/image3.jpg" alt="goat"/>
-        <img class="photob" id="4" src="../graphics/image4.jpg" alt="picnic"/>
         <p>Holder for slidey picture thing</p>
       </div>
     </div>
 
-    <div class="buttons">
+<!--    <div class="buttons">
       <a class="prev" onclick="plusslide(-1)"></a>
       <a class="next" onclick="plusslide(1)"></a>
-    </div>
+    </div> -->
 
         <div class="our-zoo">
             <h2>Our zoo</h2>
@@ -67,6 +63,22 @@
               <p> This week... </p>
             </div>
         </div>
+    <script>
+    var slideindex = 0;
+    showslides();
+
+    function showslides() {
+        var i;
+        var slides = document.getElementsByClassName("photob");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideindex++;
+        if (slideindex > slides.length) {slideindex = 1}
+        slides[slideindex-1].style.display ="block";
+        setTimeout(showslides, 2000); /*change every 2 seconds*/
+    }
+    </script>
 
     </body>
 </html>
