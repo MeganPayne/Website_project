@@ -1,7 +1,7 @@
 body {
   text-align: justify;
   /*background: url("field.jpeg");*/
-  background-image: url("field.jpeg");
+  background-image: url("../graphics/field.jpeg");
   background-repeat:no-repeat;
   background-size: cover;
   height: 100%;
