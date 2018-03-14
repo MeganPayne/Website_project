@@ -46,7 +46,7 @@ div:hover {
   position: relative;
   background: white;
 }
-/*
+
 .photob {
   display: none;
 }
@@ -68,7 +68,7 @@ div:hover {
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-*/
+
 
 .photob {
   max-width:auto;
@@ -136,13 +136,13 @@ div:hover {
    margin-left: -2125px;
  }
 }
-
+*/
 .photobanner {
     height: 233px;
     width: 3550px;
     margin-bottom: 80px;
 }
-
+/*
 .photobanner img {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
