@@ -5,13 +5,11 @@
 }
 
 h1 {
-  /*background-image: "Background-image.jpg"*/
   background: linear-gradient(bottom, rgba(0,0,0,0), rgba(0,200,0,.7));
   background: -webkit-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,200,0,.7));
   background: -moz-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,200,0,.7));
   color: rgba(61,142,34),1);
-  /*background-color: Yellow;*/
-  padding: 0 auto;
+  padding: 0 0 30px 0;
   text-align: center;
 }
 
@@ -24,3 +22,5 @@ li {
   display: inline;
   padding: 0px 10px 0px 10px;
 }
+
+div
