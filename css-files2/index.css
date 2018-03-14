@@ -46,7 +46,7 @@ div:hover {
   position: relative;
   background: white;
 }
-
+/*
 .photob {
   display: none;
 }
@@ -68,11 +68,13 @@ div:hover {
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
+*/
 
-/*
 .photob {
   max-width:auto;
   height: auto;
+  position: relative;
+  margin: 0 auto;
 }
 .photobanner {
   height: 233px;
@@ -99,7 +101,7 @@ div:hover {
  }
 }
 
-@-moz-keyframes bannermove {
+@-moz-keyframes "bannermove" {
  0% {
    margin-left: 0px;
  }
@@ -147,8 +149,8 @@ div:hover {
     -o-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
-} */
-
+}
+*/
 .photobanner img:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -161,7 +163,7 @@ div:hover {
     -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
     box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
 }
-
+/*
 table {
   align-content: space-around;
   margin: 50px auto;
@@ -181,4 +183,18 @@ td#newsbar {
   padding: 50px 50px 50px 50px;
   margin: 50px;
   align-items: center;
+}
+*/
+
+.our-zoo {
+  position: relative;
+  max-width: 100%
+  max-height: 100%;
+  margin: 0 auto;
+  left: 100px;
+}
+
+.newsbar {
+  position: relative;
+  right: 100px;
 }
