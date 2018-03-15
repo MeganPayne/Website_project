@@ -3,14 +3,15 @@ body {
   padding: 0; /*these two lines make objects stretch across the width of the screen*/
   margin: 0;
   height: 100%;
+  position: relative;
   top: 120px; /*push content out of header's way*/
   /*padding-bottom: 75px; /*Height of foot*/
 
   text-align: justify;
-  background-image: url("../graphics/zoo (18).jpg");
+  /*background-image: url("../graphics/zoo (18).jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 /*  max-width: 600px;
   min-height: 750px;*/
 }
@@ -37,16 +38,17 @@ header {
   top:80px;
   z-index: 1;
   background: rgba(255,255,1,1);
-  background: linear-gradient(rgba(255,255,1,1), rgba(0,36,0,1));
-  background: -webkit-linear-gradient(rgba(255,255,1,1), rgba(0,36,0,1));
-  background: -moz-linear-gradient(rgba(255,255,1,1), rgba(0,36,0,1));
+  background: linear-gradient(rgba(255,255,1,1), rgba(0,36,0,0));
+  background: -webkit-linear-gradient(rgba(255,255,1,1), rgba(0,36,0,0));
+  background: -moz-linear-gradient(rgba(255,255,1,1), rgba(0,36,0,0));
 }
 
 
 .photob {
-  max-width: 800px;
-  max-height: 500px;
-  margin: 100px auto;
+  max-width: 1000px;
+  max-height: 8000px;
+  margin: 120px auto 100px auto;
+  border-radius: 20px;
 }
 
 ul {
@@ -115,17 +117,28 @@ footer {
 }
 
 .dropdown {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255,255,1,0.4);
   position: relative;
   display: inline-block;
-  width: 80px;
+/*  width: 800px;
   height: 150px;
+  margin: 0 auto; */
+  max-width: 1000px;
+/*  max-height: 8000px; */
+  margin: 120px auto 100px auto;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 .tabledesign {
   background-color: rgba(255,255,255,0.3);
   position: relative;
   display: inline-block;
-  width: 95%;
+/*  width: 800px;
   height: 300px;
+  margin: 0 auto; */
+  max-width: 1000px;
+  max-height: 8000px;
+  margin: 120px auto 100px auto;
+  border-radius: 20px;
 }
