@@ -3,33 +3,63 @@ body {
   padding: 0; /*these two lines make objects stretch across the width of the screen*/
   margin: 0;
   height: 100%;
+  top: 120px; /*push content out of header's way*/
+  /*padding-bottom: 75px; /*Height of foot*/
+
+  text-align: justify;
+  background-image: url("../graphics/zoo (18).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+/*  max-width: 600px;
+  min-height: 750px;*/
 }
+.container {
+  min-height: 100%;
+  position: relative;
+}
+
 header {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 0px;  /*lock header at top of page*/
   width: 100%;
   height: 80px;
   background: rgba(255,255,1,1); /*yellow color from logo*/
+  z-index: 1;
+
+  /*text-align: center;*/
 }
+
 .blank {
   width: 100%;
-  height: 30px;
-  position: relative;
+  height: 20px;
+  position: fixed; /*so it stays with the header*/
   top:80px;
+  z-index: 1;
   background: rgba(255,255,1,1);
   background: linear-gradient(rgba(255,255,1,1), rgba(0,36,0,1));
   background: -webkit-linear-gradient(rgba(255,255,1,1), rgba(0,36,0,1));
   background: -moz-linear-gradient(rgba(255,255,1,1), rgba(0,36,0,1));
 }
+
+
+.photob {
+  max-width: 800px;
+  max-height: 500px;
+  margin: 100px auto;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
+
 li {
   float: left;
 }
+
 li a {
   display: block;
   color: black;
@@ -38,27 +68,30 @@ li a {
   padding: 4px 15px 0px 15px;
   margin: 5px;
 }
+
 .language{
   text-align: right;
   padding: 2px;
   margin: 5px;
+  float: right;
 }
+
 .language:hover {
   font-size: 40px;
 }
+
 .navigation-bar {
   font-family: 'Paytone One', sans-serif;
   font-size: 23px;
   text-align: center;
-  }
+}
+
 li a:hover {
   color: rgba(7,61,0,1);
   font-weight: bold;
   font-size: 25px;
 }
-.language {
-  float: right;
-}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -71,10 +104,28 @@ footer {
   color: white;
   font-size: 18px;
 }
+
 #phone {
   text-align:center;
   font-size: 27px;
 }
+
 #social-buttons {
   text-align:right;
+}
+
+.dropdown {
+  background-color: rgba(255,255,255,0.3);
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 150px;
+}
+
+.tabledesign {
+  background-color: rgba(255,255,255,0.3);
+  position: relative;
+  display: inline-block;
+  width: 95%;
+  height: 300px;
 }
