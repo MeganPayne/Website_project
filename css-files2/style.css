@@ -50,7 +50,10 @@ header {
   margin: 120px auto 100px auto;
   border-radius: 20px;
 }
+h1 {
+  text-align: center;
 
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -118,27 +121,35 @@ footer {
 
 .dropdown {
   background-color: rgba(255,255,1,0.4);
-  position: relative;
-  display: inline-block;
-/*  width: 800px;
-  height: 150px;
-  margin: 0 auto; */
+  background-size: cover;
+  display: block;
   max-width: 1000px;
-/*  max-height: 8000px; */
-  margin: 120px auto 100px auto;
+  margin: 12px auto 10px auto;
   border-radius: 20px;
   padding: 20px;
+  overflow:hidden;
 }
 
 .tabledesign {
   background-color: rgba(255,255,255,0.3);
   position: relative;
   display: inline-block;
-/*  width: 800px;
-  height: 300px;
-  margin: 0 auto; */
   max-width: 1000px;
   max-height: 8000px;
-  margin: 120px auto 100px auto;
+  margin: 12px auto 10px auto;
   border-radius: 20px;
+}
+
+@media (max-width: 1000px){
+  .dropdown {
+    max-width: 400px;
+    /*margin: 5px;*/
+  }
+  .tabledesign {
+    width: 400px;
+  }
+  li a {
+    display: block;
+    font-size: 10px;
+  }
 }
