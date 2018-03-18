@@ -1,25 +1,3 @@
-body {
-  background: rgba(0,36,0,1); /*dark green from logo*/
-  padding: 0; /*these two lines make objects stretch across the width of the screen*/
-  margin: 0;
-  height: 100%;
-  position: relative;
-  top: 120px; /*push content out of header's way*/
-  /*padding-bottom: 75px; /*Height of foot*/
-
-  text-align: justify;
-  /*background-image: url("../graphics/zoo (18).jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
-/*  max-width: 600px;
-  min-height: 750px;*/
-}
-.container {
-  min-height: 100%;
-  position: relative;
-}
-
 header {
   position: fixed;
   top: 0px;  /*lock header at top of page*/
@@ -27,10 +5,8 @@ header {
   height: 80px;
   background: rgba(255,255,1,1); /*yellow color from logo*/
   z-index: 1;
-
-  /*text-align: center;*/
+  text-align: center;
 }
-
 .blank {
   width: 100%;
   height: 20px;
@@ -42,26 +18,15 @@ header {
   background: -webkit-linear-gradient(rgba(255,255,1,1), rgba(0,36,0,0));
   background: -moz-linear-gradient(rgba(255,255,1,1), rgba(0,36,0,0));
 }
-
-
-.photob {
-  max-width: 1000px;
-  max-height: 8000px;
-  margin: 120px auto 100px auto;
-  border-radius: 20px;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-
 li {
   float: left;
 }
-
 li a {
   display: block;
   color: black;
@@ -70,32 +35,66 @@ li a {
   padding: 4px 15px 0px 15px;
   margin: 5px;
 }
-
 .language{
   text-align: right;
   padding: 2px;
   margin: 5px;
   float: right;
 }
-
 .language:hover {
   font-size: 40px;
 }
-
 .navigation-bar {
   font-family: 'Paytone One', sans-serif;
   font-size: 23px;
   text-align: center;
 }
-
 li a:hover {
   color: rgba(7,61,0,1);
   font-weight: bold;
   font-size: 25px;
 }
-
+body {
+  background: rgba(0,36,0,1); /*dark green from logo*/
+  padding: 0; /*these two lines make objects stretch across the width of the screen*/
+  margin: 0;
+  height: 100%;
+  position: relative;
+  top: 120px; /*push content out of header's way*/
+  /*padding-bottom: 75px; /*Height of foot*/
+  text-align: justify;
+  /*background-image: url("../graphics/zoo (18).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+/*  max-width: 600px;
+  min-height: 750px;*/
+}
+.photob {
+  position: fixed;
+  left: 720px;
+  border-radius: 20px;
+}
+.introduction {
+  position: fixed;
+  left: 40px;
+  width: 600px;
+  height: 366px;
+  background-color: rgba(190,255,190,1);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(51,204,51,1);
+  border-width: 3px;
+  font-family: "cambria", sans-serif;
+  font-size: 20px;
+  padding: 15px;
+}
+h2:hover {
+  color: rgba(51,204,51,1);
+  font-weight: bold;
+}
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 75px;
@@ -106,16 +105,31 @@ footer {
   color: white;
   font-size: 18px;
 }
-
+#address {
+  line-height: 3px;
+  position: fixed;
+  bottom: 48px;
+}
+#mail {
+  position: fixed;
+  bottom: 13px;
+}
 #phone {
-  text-align:center;
-  font-size: 27px;
+  position: fixed;
+  left: 678px;
+  font-size: 36px;
 }
-
+#phone:hover {
+  color: rgba(51,204,51,1);
+  font-weight: bold;
+}
 #social-buttons {
-  text-align:right;
+  text-align: right;
+  font-size: 20px;
+  position: fixed;
+  bottom: 13px;
+  left: 1210px;
 }
-
 .dropdown {
   background-color: rgba(255,255,1,0.4);
   position: relative;
@@ -129,7 +143,6 @@ footer {
   border-radius: 20px;
   padding: 20px;
 }
-
 .tabledesign {
   background-color: rgba(255,255,255,0.3);
   position: relative;
