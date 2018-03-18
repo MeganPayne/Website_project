@@ -1,83 +1,106 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Zoo Briezi</title>
-        <link href="../Bootstrap/bootstrap.css" type="text/css" rel="stylesheet">
-        <link href="../css-files/index.css" type="text/css" rel="stylesheet">
-        <!--<script src="../java-files/index.js" type="text/javascript"></script> -->
-        <style>
-            ul.nav li{
-                display: inline-block;
-                padding-right: 10px;
-            }
-        </style>
-    </head>
+  <div class="container">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css-files2/style.css"> <!-- changed to Agate's code -->
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="../graphics/LOGO.jpg" alt="Zoo Brieži LOGO" style="float:left;width:179.84px;height:80px;border:0;">
+      </a>
+      <p class="language">
+        <a href="indexLV.html">
+          <img src="../graphics/LV.png" alt="Latvian" style="height:35px"></a>
+        <a href="index.html">
+          <img src="../graphics/UK.png" alt="English" style="height:32px"></a>
+        <a href="indexRUS.html">
+          <img src="../graphics/RUS.png" alt="Russian"style="height:35px"></a>
+      </p>
+      <br>
+      <ul class="navigation-bar">
+        <li><a href="offer.html">OFFER</a></li>
+        <li><a href="animals.html">ANIMALS</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="prices.html">PRICES</a></li>
+        <li><a href="contacts.html">CONTACTS</a></li>
+        <li><a href="review.html">REVIEW</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+  </header>
 
-    <body>
-      <div id="titleBar">
-        <!-- This is where logo will go -->
-        <h1> Welcome to Zoo Briezi </h1>
-      </div>
+  <div class="blank"></div> <!--create lienar gradient yellow>green!-->
 
-      <div id="navigationBar">
-        <h3 id="top-bar">
-          <ul>
-            <li>How to find us</li>
-            <li> Our animals</li>
-          </ul>
-        </h3>
-      </div>
-
-    <div class="container">
-      <div class="photobanner">
-        <img class="photob" id="1" src="../graphics/image1.jpg" alt="pig"/>
-        <img class="photob" id="2" src="../graphics/image2.jpg" alt="horse"/>
-        <img class="photob" id="3" src="../graphics/image3.jpg" alt="goat"/>
-        <img class="photob" id="4" src="../graphics/image4.jpg" alt="picnic"/>
-        <p>Holder for slidey picture thing</p>
-      </div>
+  <div class="container">
+    <div class="photobanner">
+      <img class="photob" id="1" src="../graphics/image1.jpg" alt="pig"/>
+      <img class="photob" id="2" src="../graphics/image2.jpg" alt="horse"/>
+      <img class="photob" id="3" src="../graphics/image3.jpg" alt="goat"/>
+      <img class="photob" id="4" src="../graphics/image4.jpg" alt="picnic"/>
+      <p>Holder for slidey picture thing</p>
     </div>
+  </div>
 
 <!--    <div class="buttons">
-      <a class="prev" onclick="plusslide(-1)"></a>
-      <a class="next" onclick="plusslide(1)"></a>
-    </div> -->
+    <a class="prev" onclick="plusslide(-1)"></a>
+    <a class="next" onclick="plusslide(1)"></a>
+  </div> -->
 
-        <div class="our-zoo">
-            <h2>Our zoo</h2>
-        </div>
+      <div class="our-zoo">
+          <h2>Our zoo</h2>
+      </div>
 
-        <div class="newsbar">
-            <h2>What's been going on?</h2>
-            <div class="newsitem" id="item1">
-              <h3>Date</h3>
-              <p> This week... </p>
-            </div>
-            <div class="newsitem" id="item2">
-              <h3>Date</h3>
-              <p> This week... </p>
-            </div>
-            <div class="newsitem" id="item3">
-              <h3>Date</h3>
-              <p> This week... </p>
-            </div>
-        </div>
-    <script>
-    var slideindex = 0;
-    showslides();
+      <div class="newsbar">
+          <h2>What's been going on?</h2>
+          <div class="newsitem" id="item1">
+            <h3>Date</h3>
+            <p> This week... </p>
+          </div>
+          <div class="newsitem" id="item2">
+            <h3>Date</h3>
+            <p> This week... </p>
+          </div>
+          <div class="newsitem" id="item3">
+            <h3>Date</h3>
+            <p> This week... </p>
+          </div>
+      </div>
 
-    function showslides() {
-        var i;
-        var slides = document.getElementsByClassName("photob");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideindex++;
-        if (slideindex > slides.length) {slideindex = 1}
-        slides[slideindex-1].style.display ="block";
-        setTimeout(showslides, 2000); /*change every 2 seconds*/
-    }
-    </script>
+  <footer>
+    <table class="footinfo" style="width:100%">
+      <tbody>
+        <tr>
+          <td id="address" style="width:33%">Piemājas zoo "Brieži", Vālodzes, Stopiņu novads, LV-2130</td>
+          <td id="phone">+371 22005519</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>zbriezi@gmail.com</td>
+          <td></td>
+          <td id="social-buttons">Follow us on <a href="https://www.facebook.com/zoobriezi/"><img src="../graphics/fb.png" alt="Facebook" style="height:27px"></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </footer>
+</div>
 
-    </body>
+  <script>
+  var slideindex = 0;
+  showslides();
+
+  function showslides() {
+      var i;
+      var slides = document.getElementsByClassName("photob");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideindex++;
+      if (slideindex > slides.length) {slideindex = 1}
+      slides[slideindex-1].style.display ="block";
+      setTimeout(showslides, 3500); /*change every 2 seconds*/
+  }
+  </script>
+
+  </body>
 </html>
