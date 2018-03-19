@@ -63,12 +63,6 @@ body {
   top: 120px; /*push content out of header's way*/
   /*padding-bottom: 75px; /*Height of foot*/
   text-align: justify;
-  /*background-image: url("../graphics/zoo (18).jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
-/*  max-width: 600px;
-  min-height: 750px;*/
 }
 .photob {
   position: fixed;
