@@ -70,39 +70,39 @@ body {
   border-radius: 20px;
 }
 .introduction {
-  font-family: 'Open Sans', sans-serif;
-  color: rgba(0,36,0,1);
   position: fixed;
   left: 40px;
   width: 600px;
   height: 366px;
-  background-color: rgba(255,255,255,0.55);
+  background-color: rgba(190,255,190,1);
   border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(51,204,51,1);
+  border-width: 3px;
+  font-family: "cambria", sans-serif;
   font-size: 20px;
   padding: 15px;
 }
 h2:hover {
-  color: rgba(255,255,1,1);
+  color: rgba(51,204,51,1);
   font-weight: bold;
 }
 .review-block {
-  font-family: 'Open Sans', sans-serif;
-  color: rgba(0,36,0,1);
   position: fixed;
   left: 40px;
-  width: 1255px;
+  width: 1200px;
   height: 400px;
-  background-color: rgba(255,255,255,0.55);
+  background-color: rgba(190,255,190,1);
   border-radius: 10px;
+  border-style: solid;
+  border-color: rgba(51,204,51,1);
+  border-width: 3px;
+  font-family: "cambria", sans-serif;
   font-size: 16px;
   padding: 15px;
 }
 h2 {
   margin-top: -2px;
-  font-family: 'Paytone One', sans-serif;
-}
-p {
-  line-height: 25px;
 }
 footer {
   position: fixed;
