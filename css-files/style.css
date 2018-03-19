@@ -158,13 +158,16 @@ footer {
   overflow:hidden;
 }
 .tabledesign {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(209,219,100,1);
+  background-size: cover;
   position: relative;
-  display: inline-block;
+  display: block;
   max-width: 1000px;
   max-height: 8000px;
   margin: 12px auto 10px auto;
   border-radius: 20px;
+  padding: 20px;
+  overflow:hidden;
 }
 
 @media (max-width: 800px){
