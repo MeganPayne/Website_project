@@ -1,10 +1,10 @@
 /*html {
   overflow: scroll;
-}
-/*.container {
+} */
+.container {
   position: relative;
   min-height: 100%;
-}*/
+}
 
 header {
   position: fixed;
@@ -69,7 +69,7 @@ body {
   height: 100%;
   position: relative;
   top: 120px; /*push content out of header's way*/
-  /*padding-bottom: 75px; /*Height of foot*/
+  padding-bottom: 75px; /*Height of foot*/
   text-align: justify;
   font-family: 'Open Sans', sans-serif;
 }
@@ -83,11 +83,8 @@ body {
   left: 40px;
   width: 600px;
   height: 366px;
-  background-color: rgba(190,255,190,1);
+  background-color: rgba(209,219,100,1);
   border-radius: 10px;
-  border-style: solid;
-  border-color: rgba(51,204,51,1);
-  border-width: 3px;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   padding: 15px;
@@ -96,16 +93,23 @@ h2:hover {
   color: rgba(51,204,51,1);
   font-weight: bold;
 }
+
+.heading {
+  background-color: rgba(209,219,100,1);
+  background-size: cover;
+  display: block;
+  max-width: 1000px;
+  margin: 12px auto 10px auto;
+  border-radius: 20px;
+  padding: 20px;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
 .review-block {
-  position: fixed;
-  left: 40px;
-  width: 1200px;
-  height: 400px;
-  background-color: rgba(190,255,190,1);
+  max-width: 1000px;
+  margin: 12px auto 10px auto;
+  background-color: rgba(209,219,100,1);
   border-radius: 10px;
-  border-style: solid;
-  border-color: rgba(51,204,51,1);
-  border-width: 3px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   padding: 15px;
@@ -114,7 +118,7 @@ h2 {
   margin-top: -2px;
 }
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 75px;
@@ -185,3 +189,16 @@ footer {
     display: block;
     font-size: 10px;
   }
+/*  .photob {
+    position: relative;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 600px;
+    max-height:
+  }
+  .introduction {
+    position: relative;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 600px;
+  } */
