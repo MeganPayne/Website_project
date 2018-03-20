@@ -81,7 +81,7 @@ body {
 .introduction {
   position: fixed;
   left: 40px;
-  width: 600px;
+  max-width: 600px;
   height: 366px;
   background-color: rgba(209,219,100,1);
   border-radius: 10px;
@@ -141,7 +141,7 @@ footer {
 }
 #phone {
   position: fixed;
-  left: 620px;/*678px;*/
+  left: 620px;
   font-size: 26px;
 }
 #phone:hover {
@@ -153,7 +153,6 @@ footer {
   font-size: 20px;
   position: fixed;
   bottom: 13px;
-  /*left: 1210px;*/
   right: 15px;
 }
 .dropdown {
