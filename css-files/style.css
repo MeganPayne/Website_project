@@ -1,11 +1,8 @@
-/*html {
-  overflow: scroll;
-} */
+
 .container {
   position: relative;
   min-height: 100%;
 }
-
 header {
   position: fixed;
   top: 0px;  /*lock header at top of page*/
@@ -69,25 +66,30 @@ body {
   height: 100%;
   position: relative;
   top: 120px; /*push content out of header's way*/
-  padding-bottom: 75px; /*Height of foot*/
+  margin-bottom: 75px; /*Height of foot*/
   text-align: justify;
   font-family: 'Open Sans', sans-serif;
 }
 .photob {
-  position: fixed;
-  left: 720px;
+  position: absolute; /*fixed*/
+  top:0;left:51%;bottom:0;right:0; /*right: 20px;*/
   border-radius: 20px;
+  padding: 10px;
+  max-width: 600px;
+  height: auto;
 }
 .introduction {
-  position: fixed;
-  left: 40px;
+  position: absolute; /*fixed;*/
+  top:0;right:51%;bottom:0;left:0;/*left: 20px;*/
+  padding:15px;
+  margin-bottom: 80px;
   max-width: 600px;
-  height: 366px;
+  min-height: 400px;
   background-color: rgba(209,219,100,1);
+  background-size: cover;
   border-radius: 10px;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  padding: 15px;
 }
 h2:hover {
   color: rgba(51,204,51,1);
@@ -188,16 +190,16 @@ footer {
     display: block;
     font-size: 10px;
   }
-/*  .photob {
+  .photob {
     position: relative;
+    top:0;left:5%;bottom:0;right:5%;
     padding: 10px;
     margin: 0 auto;
-    max-width: 600px;
-    max-height:
-  }
+    max-width: 100%;
+}
   .introduction {
     position: relative;
     padding: 10px;
     margin: 0 auto;
     max-width: 600px;
-  } */
+  }
