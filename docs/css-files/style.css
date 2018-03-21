@@ -1,0 +1,205 @@
+
+.container {
+  position: relative;
+  min-height: 100%;
+}
+header {
+  position: fixed;
+  top: 0px;  /*lock header at top of page*/
+  width: 100%;
+  height: 80px;
+  background: rgba(255,255,1,1); /*yellow color from logo*/
+  z-index: 1;
+  text-align: center;
+}
+.blank {
+  width: 100%;
+  height: 20px;
+  position: fixed; /*so it stays with the header*/
+  top:80px;
+  z-index: 1;
+  background: rgba(255,255,1,1);
+  background: linear-gradient(rgba(255,255,1,1), rgba(0,36,0,0));
+  background: -webkit-linear-gradient(rgba(255,255,1,1), rgba(0,36,0,0));
+  background: -moz-linear-gradient(rgba(255,255,1,1), rgba(0,36,0,0));
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 4px 15px 0px 15px;
+  margin: 5px;
+}
+.language{
+  text-align: right;
+  padding: 2px;
+  margin: 5px;
+  float: right;
+}
+.language:hover {
+  font-size: 40px;
+}
+.navigation-bar {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 23px;
+  text-align: center;
+}
+li a:hover {
+  color: rgba(7,61,0,1);
+  font-weight: bold;
+  font-size: 25px;
+}
+body {
+  background: rgba(0,36,0,1); /*dark green from logo*/
+  padding: 0; /*these two lines make objects stretch across the width of the screen*/
+  margin: 0;
+  height: 100%;
+  position: relative;
+  top: 120px; /*push content out of header's way*/
+  margin-bottom: 75px; /*Height of foot*/
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+}
+.photob {
+  position: absolute; /*fixed*/
+  top:0;left:51%;bottom:0;right:0; /*right: 20px;*/
+  border-radius: 20px;
+  padding: 10px;
+  max-width: 600px;
+  height: auto;
+}
+.introduction {
+  position: absolute; /*fixed;*/
+  top:0;right:51%;bottom:0;left:0;/*left: 20px;*/
+  padding:15px;
+  margin-bottom: 80px;
+  max-width: 600px;
+  min-height: 400px;
+  background-color: rgba(209,219,100,1);
+  background-size: cover;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+h2:hover {
+  color: rgba(51,204,51,1);
+  font-weight: bold;
+}
+
+.heading {
+  background-color: rgba(209,219,100,1);
+  background-size: cover;
+  display: block;
+  max-width: 1000px;
+  margin: 12px auto 10px auto;
+  border-radius: 20px;
+  padding: 20px;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+.review-block {
+  max-width: 1000px;
+  margin: 12px auto 10px auto;
+  background-color: rgba(209,219,100,1);
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  padding: 15px;
+}
+h2 {
+  margin-top: -2px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+  background: rgba(7,61,0,1); /*light green from logo*/
+  background: linear-gradient(bottom, rgba(7,61,0,1), rgba(0,36,0,1));
+  background: -webkit-linear-gradient(bottom, rgba(7,61,0,1), rgba(0,36,0,1));
+  background: -moz-linear-gradient(bottom, rgba(7,61,0,1), rgba(0,36,0,1));
+  color: white;/*rgba(255,255,1,1);*/
+  font-size: 14px; /*was 18*/
+  font-family: 'Paytone One', sans-serif;
+}
+#address {
+  line-height: 3px;
+  position: fixed;
+  bottom: 48px;
+}
+#mail {
+  position: fixed;
+  bottom: 13px;
+}
+#phone {
+  position: fixed;
+  left: 620px;
+  font-size: 26px;
+}
+#phone:hover {
+  color: rgba(51,204,51,1);
+  font-weight: bold;
+}
+#social-buttons {
+  text-align: right;
+  font-size: 20px;
+  position: fixed;
+  bottom: 13px;
+  right: 15px;
+}
+.dropdown {
+  background-color: rgba(209,219,100,1);
+  background-size: cover;
+  display: block;
+  max-width: 1000px;
+  margin: 12px auto 10px auto;
+  border-radius: 20px;
+  padding: 20px;
+  overflow:hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+.tabledesign {
+  background-color: rgba(209,219,100,1);
+  background-size: cover;
+  position: relative;
+  display: block;
+  max-width: 1000px;
+  max-height: 8000px;
+  margin: 12px auto 10px auto;
+  border-radius: 20px;
+  padding: 20px;
+  overflow:hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 800px){
+  .tabledesign {
+    width: 400px;
+  }
+  li a {
+    display: block;
+    font-size: 10px;
+  }
+  .photob {
+    position: relative;
+    top:0;left:5%;bottom:0;right:5%;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+  .introduction {
+    position: relative;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 600px;
+  }
